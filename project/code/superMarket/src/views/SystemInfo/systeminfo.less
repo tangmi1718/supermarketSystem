@@ -1,0 +1,48 @@
+.system-info{
+     // 面板取消盒子阴影
+    .el-card.is-always-shadow{
+        box-shadow:none;
+        border: 2px solid #f1f1f1;
+    }
+    // 面板
+    .el-card{
+        width: 96%;
+        // 表单头部
+        .el-card__header{
+            background-color: #f1f1f1;
+            font-size: 20px;
+            font-weight: bold;
+            color: #3E4E67;
+            padding: 10px 20px;
+        }
+        // 设置中间内间距
+        .syatemContent{
+            padding-bottom: 20px;
+            .el-card__header{
+                padding: 8px 20px;
+            }
+            // 面板取消盒子阴影
+            .el-card.is-always-shadow{
+                box-shadow:none;
+                border: 1px solid #e4e1e1;
+            }
+        }
+        // 表单内容
+        .el-card__body{
+            .hintMessage{
+                .el-alert--info{
+                    margin-bottom: 20px;
+                   background-color: #DBE3FF;
+                   border: 1px solid #91D0F5;
+                   .el-alert__icon{color:#284DBD;}
+                  
+                }
+            }
+        }
+        // 入库按钮
+        .importBtn{
+            background-color:#409EFF;border:none;width:50px;border-radius: 4px;height: 20px;line-height: 20px;color: #fff;
+            cursor: pointer;
+        }
+    }
+}

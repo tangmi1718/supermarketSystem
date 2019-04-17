@@ -1,0 +1,89 @@
+.stock-manage{
+
+    // 面板取消盒子阴影
+    .el-card.is-always-shadow{
+        box-shadow:none;
+        border: 2px solid #f1f1f1;
+    }
+    // 面板
+    .el-card{
+        width: 96%;
+        // 表单头部
+        .el-card__header{
+            background-color: #f1f1f1;
+            font-size: 20px;
+            font-weight: bold;
+            color: #3E4E67;
+            padding: 10px 20px;
+        }
+        // 查询信息
+        .searchHeader{
+            hr{
+                border: 1px solid rgb(224, 218, 218);
+                height: 2px;
+                background-color: #f1f1f1;
+            }
+            // 顶部表单
+            .el-form{
+                width: 800px;
+                .el-row{
+                    .el-col-4{
+                        .el-form-item__content{
+                            margin-left: 0px!important;
+                        }
+                    }
+
+                    .el-col-16{
+                        .el-form-item__label{text-align: center;width: 60px!important;padding: 0px!important;}
+                        .el-form-item__content{margin-left: 0px!important;}
+                        .goodsCode{
+                            color: #999;font-size: 12px;
+                        }
+                        .el-col-10{margin-right: 5px;}
+                    }
+                    
+                }
+            }
+
+            // 表格数据
+            .el-table{
+                    .el-tooltip{
+                        .el-icon-edit{color: red!important;}
+                    } 
+            }
+        }
+
+        // 表格数据
+        .goodsManageCard{
+            // 图标颜色
+            .el-tooltip{
+                .iconstyle{
+                    margin-right: 10px;color: #327fcc;cursor: pointer;
+                }
+                .el-icon-delete{color:red;}
+            }
+        }
+
+        // 分页
+        .goodsManagePages{
+            padding: 30px 0 10px;
+        }
+
+        // 模态框
+        .el-dialog{
+            width: 500px;
+            .el-form{
+                width: 260px;
+                .el-dialog__body{padding: 20px;}
+                .el-input__inner{width: 250px;}
+                .el-form-item{margin-bottom: 20px;}
+                .el-form-item__error{width: 250px}
+            }
+                
+            .el-select .el-input .el-select__caret{margin-right: -180px;}
+        }
+
+        .el-form--label-top .el-form-item__label{padding: 0px;line-height: 30px}
+    }
+    
+}
